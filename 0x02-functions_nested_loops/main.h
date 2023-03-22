@@ -9,3 +9,4 @@ int print_last_digit(int);	/** prototype for task 7 */
 void jack_bauer(void); 		/** prototype for task 8 */
 void times_table(void);		/** prototype for task 9 */
 int add(int, int);		/** prototype for task 10*/
+void print_to_98(int n);	/** prototype for task 11*/
