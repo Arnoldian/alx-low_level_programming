@@ -6,3 +6,4 @@ int _isalpha(int c);	/** another prototype */
 int print_sign(int n);	/** prototype for task 5 */
 int _abs(int);		/** prototype for task 6 */
 int print_last_digit(int);	/** prototype for task 7 */
+void jack_bauer(void); 		/** prototype for task 8 */
