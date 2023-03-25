@@ -7,5 +7,6 @@ int mul(int a, in b);
 void print_numbers(void);
 int _putchar(char c);		/** necessary from task 3 */
 void print_most_numbers(void);
+void more_numbers(void);
 
 #endif
