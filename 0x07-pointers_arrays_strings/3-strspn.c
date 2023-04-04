@@ -4,28 +4,29 @@
  * _strspn - function gets the length of prefix substring
  * @s: string 
  * @accept: bytes
+ * @boolean: int either 0 or 1
  * Return: i
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, bool;
+	unsigned int i, j, boolean;
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		bool = 1;
+		boolean = 1;
 
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				bool = 0;
+				boolean = 0;
 				break;
 			}
 		}
-/*
-		if (bool == 1)
-			break;*/
+
+		if (boolean == 1)
+			break;
 	}
 
 	return (i);
