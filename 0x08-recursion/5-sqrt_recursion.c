@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 /**
  * exponentiation -  recursive function to work with _sqrt_recursion function
  * @n: number input parameter (same as in _sqrt_recursion function)
- * @c: iteration parameter 
+ * @c: iteration parameter
  * Return: c, -1 or (exponetiation(n, c+1))
  */
 
