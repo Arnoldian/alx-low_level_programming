@@ -3,7 +3,7 @@
 /**
  * is_prime_number - function check input as prime number or not
  * @n: number input parameter
- * Return: 1 for true and 0 for false 
+ * Return: 1 for true and 0 for false
  */
 
 int is_prime_number(int n)
@@ -35,5 +35,5 @@ int prime_check(unsigned int n, unsigned int c)
 			return (0);
 	}
 
-	return (prime_check(n, c+1));
+	return (prime_check(n, c + 1));
 }
