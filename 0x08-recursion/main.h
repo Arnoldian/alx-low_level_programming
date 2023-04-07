@@ -8,4 +8,4 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int exponentiation(int n, int c);	/* my addition (not  intrinsic to task) */
 int is_prime_number(int n);
-int prime check(unsigned int n, unsigned int c);
+int prime_check(unsigned int n, unsigned int c);
