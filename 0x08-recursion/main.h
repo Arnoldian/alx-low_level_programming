@@ -9,3 +9,5 @@ int _sqrt_recursion(int n);
 int exponentiation(int n, int c);	/* my addition (not  intrinsic to task) */
 int is_prime_number(int n);
 int prime_check(unsigned int n, unsigned int c);
+int is_palindrome(char *s);
+int comparor(char *s, int n1, int n2);
