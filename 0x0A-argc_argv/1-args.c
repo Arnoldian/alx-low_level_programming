@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main(int argc, char *arv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	
