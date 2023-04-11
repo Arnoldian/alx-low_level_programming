@@ -9,7 +9,7 @@
 
 int main(int argc, char *arv[])
 {
-	itn i;
+	int i;
 	
 	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
