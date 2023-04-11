@@ -4,8 +4,7 @@
 /**
  * main - program multiplies two numbers
  * @argc: cmd line args number parameter
- * @argv: cmd line args array parameter
- * @atoi: stdlib 
+ * @argv: cmd line args array parameter 
  * Return: 0
  */
 
