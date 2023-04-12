@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/** 
+/**
  * _strdup - func returns pointer to newly alloc space in mem
  * @str: string input (char array) parameter
  * Return: str_out
