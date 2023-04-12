@@ -45,12 +45,9 @@ char *argstostr(int ac, char **av)
 			ia++;
 			j = 0;
 		}
-
 		if (ia < c - 1)
 			a_out[ia] = av[i][j];
 	}
-
 	a_out[ia] = '\0';
-
 	return (a_out);
 }
