@@ -3,7 +3,7 @@
  * @name: name of it 
  * @age: age of it
  * @owner: owner of it
- * description: dog with name, age and owner info
+ * Description: dog with name, age and owner info
  */
 
 struct dog
