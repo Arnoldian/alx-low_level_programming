@@ -1,5 +1,5 @@
 /**
- * stuct dog - new type struct dog
+ * struct dog - new type struct dog
  * @name: name of it 
  * @age: age of it
  * @owner: owner of it
@@ -12,9 +12,3 @@ struct dog
 	float age;
 	char *owner;
 };
-
-/**
- * dog_t - typedef for struct dog
- */
-
-typedef struct dog dog_t;
