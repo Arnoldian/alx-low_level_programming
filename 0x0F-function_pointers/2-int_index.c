@@ -5,9 +5,7 @@
  * @array: array to search for int in
  * @size: array size parameter
  * @cmp: pointer to comparing function (stdlib) parameter
- * return: returns index of 1st element for which
- * cmp function does not return 0, or -1 if no match found
- * or size negative
+ * return: returns i or -1
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
