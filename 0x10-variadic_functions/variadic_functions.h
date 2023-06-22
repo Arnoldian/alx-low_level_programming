@@ -31,4 +31,6 @@ typedef struct printer
 
 } printer_a;
 
+void print_all(const char * const format, ...);
+
 #endif
