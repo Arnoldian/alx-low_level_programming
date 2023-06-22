@@ -61,6 +61,19 @@ void print_float(va_list arg)
 }
 
 /**
+ * struct printer - new struct type to define a printer
+ * @symbol: symbol standing for data type
+ * @print: function pointer to function that prints DT alligning with symbol
+ */
+
+typedef struct printer
+{
+        char *symbol;
+        void (*print)(va_list arg);
+
+} printer_a;
+
+/**
  * print_all - arg not char, str (char *), int or float ignored; NULL str arg printed as (nil)
  * @format: string of chars, stands for argument types
  * @...: A variable number of arguments (to print), ellipses
