@@ -6,6 +6,7 @@
  * @separator: 		string to be printed between numbers
  * @n: 			no. of ints passed to func
  * @...: 		ellipsis
+ * Return:		no return statement
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
