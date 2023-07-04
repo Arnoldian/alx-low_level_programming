@@ -1,5 +1,5 @@
-
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * free_listp - frees linked list
@@ -44,7 +44,7 @@ size_t print_listint_safe(const listint_t *head)
 			exit(98);
 
 		new->p = (void *)head;
-		new->next = hptr;
+		new->next = h_ptr;
 		h_ptr = new;
 
 		add = h_ptr;
