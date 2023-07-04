@@ -2,6 +2,24 @@
 #include <stdio.h>
 
 /**
+ * struct printer - new struct type to define a printer
+ * @symbol: symbol standing for data type
+ * @print: function pointer to function that prints DT alligning with symbol
+ */
+
+typedef struct printer
+{
+        char *symbol;
+        void (*print)(va_list arg);
+
+} printer_a;
+
+int sum_them_all(const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...);
+void print_strings(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
+
+/**
  * print_char - prints char
  * @arg: list of arguments directing to char to print
  */
@@ -59,19 +77,6 @@ void print_float(va_list arg)
 	number = va_arg(arg, double);
 	printf("%f", number);
 }
-
-/**
- * struct printer - new struct type to define a printer
- * @symbol: symbol standing for data type
- * @print: function pointer to function that prints DT alligning with symbol
- */
-
-typedef struct printer
-{
-        char *symbol;
-        void (*print)(va_list arg);
-
-} printer_a;
 
 /**
  * print_all - arg not char, str (char *), int or float ignored; NULL str arg printed as (nil)
