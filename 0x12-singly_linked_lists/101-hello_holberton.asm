@@ -1,9 +1,10 @@
 
 section .data
-    message db 'Hello, Holberton', 10
+	message db 'Hello, Holberton', 10
 
 section .text
-    global _start
+	global main
+	extern printf
 
 _start:
     ; write message to stdout
@@ -11,9 +12,7 @@ _start:
     mov ebx, 1
     mov ecx, message
     mov edx, 16
-    int 0x80
 
     ; exit program
     mov eax, 1
     xor ebx, ebx
-    int 0x80
