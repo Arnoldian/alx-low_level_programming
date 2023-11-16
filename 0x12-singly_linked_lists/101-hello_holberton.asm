@@ -1,20 +1,13 @@
 
 section .data
-    message db 'Hello, Holberton', 10
+    msg db "Hello, Holberton", 10
 
 section .text
-    global main
-    extern printf
+    global _start
 
-main:
-    ; write message to stdout
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, message
-    mov rdx, 16
-    syscall
-
-    ; exit program
+_start:
+    mov rdi, msg
+    call printf
     mov rax, 60
-    xor rdi, rdi
+    xor edi, edi
     syscall
