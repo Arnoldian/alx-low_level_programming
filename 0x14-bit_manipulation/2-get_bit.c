@@ -1,4 +1,3 @@
-#include<stdlib.h>
 #include "main.h"
 
 /**
@@ -16,5 +15,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	unsigned long int mask = 1UL << index;
-	return (n & mask) ? 1 : 0;
+	return ((n & mask) ? 1 : 0);
 }
