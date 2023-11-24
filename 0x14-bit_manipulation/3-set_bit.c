@@ -11,11 +11,11 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	if (index >= 64)
 	{
-	// error: out of range index
-	return -1;
+		// error: out of range index
+		return -1;
 	}
 
-	m = 1 << index;
-	*n = (*n | m);
+	//m = 1 << index;
+	*n ^= (1 << m);
 	return 1;
 }
