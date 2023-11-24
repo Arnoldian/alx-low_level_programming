@@ -16,6 +16,9 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	}
 
 	mask <<= index;
-	*n &= ~mask;
+	//*n &= ~mask;
+	if (*n & mask)
+		*n ^= mask;
+
 	return 1;
 }
