@@ -9,7 +9,7 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index >= 64)
+	if (index > 63)
 	{
 	// error: out of range index
 	return -1;
