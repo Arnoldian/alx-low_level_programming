@@ -9,13 +9,18 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	unsigned long int mask = 1;
+
 	if (index >= 64)
 	{
 		// error: out of range index
 		return -1;
 	}
 
+	mask <<= index;
+
 	//m = 1 << index;
-	*n ^= (1 << m);
+	*n = (*n | mask);
+
 	return 1;
 }
