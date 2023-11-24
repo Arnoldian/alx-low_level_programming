@@ -10,11 +10,11 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int mask = 1UL;
-	if (index >= sizeof(unsigned long int) * 8)
+	if (index > 53)
 	{
 		return -1; // error: out of range index
 	}
 
 	mask <<= index;
-	return ((n & mask) ? 1 : 0);
+	return ((n >> index) & 1);
 }
