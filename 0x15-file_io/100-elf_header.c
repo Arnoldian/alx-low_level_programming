@@ -11,7 +11,14 @@
 
 void print_err(const char *msg)
 {
-	dprintf(2, "%s\n", msg);
+	size_t i = 0;
+
+	while (msg[i] != '\0')
+	{
+		_putchar(msg[i]);
+		i++;
+	}
+	_putchar('\n');
 	exit(98);
 }
 
