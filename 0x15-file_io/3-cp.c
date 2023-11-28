@@ -6,6 +6,13 @@
 
 #define BUFFER_SIZE 1024
 
+/**
+ * main - main func
+ * @ac: arg count
+ * @av: arg vec
+ * Return: 0
+ */
+
 int main(int ac, char **av)
 {
 	int file_d_from, file_d_to, rd, wr;
